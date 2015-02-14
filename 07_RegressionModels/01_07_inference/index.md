@@ -116,7 +116,7 @@ sumCoef[1,1] + c(-1, 1) * qt(.975, df = fit$df) * sumCoef[1, 2]
 ```
 [1] 355.6 388.6
 ```
-With 95% confidence, we estimate that a 0.1 carat increase in
+With 97.5% confidence, we estimate that a 0.1 carat increase in
 diamond size results in a 355.6 to 388.6 increase in price in (Singapore) dollars.
 
 ---
