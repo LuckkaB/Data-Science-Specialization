@@ -193,12 +193,12 @@ is approximately normal with mean $\mu$ and sd $\sigma / \sqrt{n}$
 - $\mu + 2 \sigma /\sqrt{n}$ is pretty far out in the tail
 (only 2.5% of a normal being larger than 2 sds in the tail)
 - Similarly, $\mu - 2 \sigma /\sqrt{n}$ is pretty far in the left tail (only 2.5% chance of a normal being smaller than 2 sds in the tail)
-- So the probability $\bar X$ is bigger than $\mu + 2 \sigma / \sqrt{n}$
+- So the probability that $\bar X$ is bigger than $\mu + 2 \sigma / \sqrt{n}$
 or smaller than $\mu - 2 \sigma / \sqrt{n}$ is 5%
     - Or equivalently, the probability of being between these limits is 95%
 - The quantity $\bar X \pm 2 \sigma /\sqrt{n}$ is called
 a 95% interval for $\mu$
-- The 95% refers to the fact that if one were to repeatly
+- The 95% refers to the fact that if one were to repeatedly
 get samples of size $n$, about 95% of the intervals obtained
 would contain $\mu$
 - The 97.5th quantile is 1.96 (so I rounded to 2 above)
