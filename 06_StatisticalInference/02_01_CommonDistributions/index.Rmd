@@ -193,10 +193,19 @@ sapply(-3 : 3, function(k) abline(v = k))
 
 ## More facts about the normal density
 
-1. Approximately $68\%$, $95\%$ and $99\%$  of the normal density lies within $1$, $2$ and $3$ standard deviations from the mean, respectively
-2. $-1.28$, $-1.645$, $-1.96$ and $-2.33$ are the $10^{th}$, $5^{th}$, $2.5^{th}$ and $1^{st}$ percentiles of the standard normal distribution respectively
-3. By symmetry, $1.28$, $1.645$, $1.96$ and $2.33$ are the $90^{th}$, $95^{th}$, $97.5^{th}$ and $99^{th}$ percentiles of the standard normal distribution respectively
+Approximately $68\%$, $95\%$ and $99\%$  of the normal density lies within $1$, $2$ and $3$ standard deviations from the mean, respectively
 
+
+```{r: table percentiles std normal dist, cache=TRUE, echo = FALSE, results='asis'}
+require(xtable) # for a pretty table in the HTML output
+m <- matrix(data=c(-2.33,-1.96,-1.645,-1.28,1.28,1.645,1.96,2.33,1.0, 2.5, 5.0, 10.0, 90.0, 95.0, 97.5, 99.0),nrow=8,dimnames=list(c("","","","","","","",""),c("Z-values","Percentiles")))
+xt <- xtable(m,caption="Z-values and their respective percentiles")
+digits(xt)[c(1,2,3)]<-c(0,3,1)
+display(xt)[c(1,2,3)]<-c("s","f","f")
+align(xt)[c(1,2,3)]<-c("l","r","r")
+print( xt ,type="html")
+```
+ 
 ---
 
 ## Question
