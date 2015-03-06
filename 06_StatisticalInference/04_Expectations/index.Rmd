@@ -14,7 +14,7 @@ widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 ---
 ## Expected values
-- Expected values are useful cor characterizing a distribution
+- Expected values are useful for characterizing a distribution
 - The mean is a characterization of its center
 - The variance and standard deviation are characterizations of
 how spread out it is
@@ -57,7 +57,10 @@ g
 ---
 ## Using manipulate
 ```
+library(HistData)
+library(ggplot2)
 library(manipulate)
+galton <- HistData::Galton
 myHist <- function(mu){
     g <- ggplot(galton, aes(x = child))
     g <- g + geom_histogram(fill = "salmon", 
