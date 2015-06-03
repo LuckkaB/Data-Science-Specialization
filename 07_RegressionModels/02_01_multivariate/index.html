@@ -109,13 +109,13 @@ by adding terms linearly into the model.
 \[
 Y_i =  \beta_1 X_{1i} + \beta_2 X_{2i} + \ldots +
 \beta_{p} X_{pi} + \epsilon_{i} 
-= \sum_{k=1}^p X_{ki} \beta_i + \epsilon_{i}
+= \sum_{k=1}^p X_{ki} \beta_k + \epsilon_{i}
 \]</li>
 <li>Here \(X_{1i}=1\) typically, so that an intercept is included.</li>
 <li>Least squares (and hence ML estimates under iid Gaussianity 
 of the errors) minimizes
 \[
-\sum_{i=1}^n \left(Y_i - \sum_{k=1}^p X_{ki} \beta_i\right)^2
+\sum_{i=1}^n \left(Y_i - \sum_{k=1}^p X_{ki} \beta_k\right)^2
 \]</li>
 <li>Note, the important linearity is linearity in the coefficients.
 Thus
@@ -281,8 +281,8 @@ interpretations.</p>
     <p>All of our SLR quantities can be extended to linear models</p>
 
 <ul>
-<li>Model \(Y_i = \sum_{k=1}^p X_{ik} \beta_{k} + \epsilon_{i}\) where \(\epsilon_i \sim N(0, \sigma^2)\)</li>
-<li>Fitted responses \(\hat Y_i = \sum_{k=1}^p X_{ik} \hat \beta_{k}\)</li>
+<li>Model \(Y_i = \sum_{k=1}^p X_{ki} \beta_{k} + \epsilon_{i}\) where \(\epsilon_i \sim N(0, \sigma^2)\)</li>
+<li>Fitted responses \(\hat Y_i = \sum_{k=1}^p X_{ki} \hat \beta_{k}\)</li>
 <li>Residuals \(e_i = Y_i - \hat Y_i\)</li>
 <li>Variance estimate \(\hat \sigma^2 = \frac{1}{n-p} \sum_{i=1}^n e_i ^2\)</li>
 <li>To get predicted responses at new values, \(x_1, \ldots, x_p\), simply plug them into the linear model \(\sum_{k=1}^p x_{k} \hat \beta_{k}\)</li>
