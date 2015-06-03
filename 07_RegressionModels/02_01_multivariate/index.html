@@ -45,7 +45,8 @@
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <article data-timings="">
-    <pre><code>## Error: object &#39;opts_chunk&#39; not found
+<!--
+<pre><code>## Error: object &#39;opts_chunk&#39; not found
 </code></pre>
 
 <pre><code>## Error: object &#39;knit_hooks&#39; not found
@@ -53,7 +54,7 @@
 
 <pre><code>## Error: object &#39;knit_hooks&#39; not found
 </code></pre>
-
+-->
 <h2>Multivariable regression analyses</h2>
 
 <ul>
@@ -108,13 +109,13 @@ by adding terms linearly into the model.
 \[
 Y_i =  \beta_1 X_{1i} + \beta_2 X_{2i} + \ldots +
 \beta_{p} X_{pi} + \epsilon_{i} 
-= \sum_{k=1}^p X_{ik} \beta_j + \epsilon_{i}
+= \sum_{k=1}^p X_{ki} \beta_i + \epsilon_{i}
 \]</li>
 <li>Here \(X_{1i}=1\) typically, so that an intercept is included.</li>
 <li>Least squares (and hence ML estimates under iid Gaussianity 
 of the errors) minimizes
 \[
-\sum_{i=1}^n \left(Y_i - \sum_{k=1}^p X_{ki} \beta_j\right)^2
+\sum_{i=1}^n \left(Y_i - \sum_{k=1}^p X_{ki} \beta_i\right)^2
 \]</li>
 <li>Note, the important linearity is linearity in the coefficients.
 Thus
@@ -174,7 +175,7 @@ from both the regressor and response.</li>
   </hgroup>
   <article data-timings="">
     <ul>
-<li>\(Y_{i} = \beta_1 X_{1i} + \beta_2 X_{2i}\) where  \(X_{2i} = 1\) is an intercept term.</li>
+<li>\(Y_{i} = X_{1i}\beta_1 + X_{2i}\beta_2\) where  \(X_{2i} = 1\) is an intercept term.</li>
 <li>Notice the fitted coefficient of \(X_{2i}\) on \(Y_{i}\) is \(\bar Y\)
 
 <ul>
@@ -251,7 +252,7 @@ sum(ey * ex) / sum(ex ^ 2)
 
 <slide class="" id="slide-9" style="background:;">
   <hgroup>
-    <h2>Interpretation of the coeficients</h2>
+    <h2>Interpretation of the coefficients</h2>
   </hgroup>
   <article data-timings="">
     <p>\[E[Y | X_1 = x_1, \ldots, X_p = x_p] = \sum_{k=1}^p x_{k} \beta_k\]</p>
