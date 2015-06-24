@@ -129,7 +129,7 @@ standard deviations from the mean
   with the normal quantiles replaced by the appropriate Student's $T$ quantiles and
   $n-1$ df
 * The probability of rejecting the null hypothesis when it is false is called *power*
-* Power is a used a lot to calculate sample sizes for experiments
+* Power is used a lot to calculate sample sizes for experiments
 
 ---
 ## Example reconsidered
