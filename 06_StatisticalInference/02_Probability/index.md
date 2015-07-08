@@ -49,7 +49,7 @@ The Russian mathematician Kolmogorov formalized these rules.
 
 - The probability that nothing occurs is 0
 - The probability that something occurs is 1
-- The probability of something is 1 minus the probability that the opposite occurs
+- The probability of something occurs is 1 minus the probability that the opposite occurs
 - The probability of at least one of 
     two (or more) things that can not simultaneously occur (mutually exclusive) 
     is the sum of their
