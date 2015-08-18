@@ -1,0 +1,55 @@
+---
+title: "exponential distribution"
+author: "Thierry Musy"
+date: "18. August 2015"
+output: pdf_document
+---
+
+Investigation on the exponential distribution
+----------------------------------------
+In this PDF the exponential distribution is investigated.
+
+## Simulation setup
+
+## Mean
+The theoretical mean of a exponential distribution is 1/lambda. With lambda set to 0.2 the mean is:
+
+mean = 1 / lamda = 1/0.2 = lamda^-1 = 5
+
+```{r}
+theoretical_mean = lambda^-1
+```
+
+The sample mean is caculated by running 1000 time the mean of 40 exponential distribution.
+
+```{r}
+mns = NULL
+for (i in 1: 1000) mns = c(mns, mean(rexp(40, 0.2)))
+hist(mns)
+```
+
+## Variance
+The theoretical variance of a exponential distribution is lambda^-2. With lambda set to 0.2 the variance is:
+
+mean = lamda^-2 = 25
+
+```{r}
+theoretical_variance = lambda^-2
+```
+
+The sample variance is caculated by running 1000 time the variance of 40 exponential distribution.
+
+```{r}
+mns = NULL
+for (i in 1: 1000) mns = c(mns, mean(rexp(40, 0.2)))
+hist(mns)
+```
+
+
+You can also embed plots, for example:
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

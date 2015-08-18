@@ -1,4 +1,3 @@
-
 # histogram of 1000 exponential distribution
 hist(rexp(10000, 0.2))
 
