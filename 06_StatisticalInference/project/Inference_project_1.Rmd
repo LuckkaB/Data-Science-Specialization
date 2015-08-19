@@ -1,7 +1,7 @@
 ---
 title: "exponential distribution"
 author: "Thierry Musy"
-date: "18. August 2015"
+date: "08.18.2015"
 output: pdf_document
 ---
 
@@ -14,9 +14,10 @@ In this PDF the exponential distribution is investigated.
 ## Mean
 The theoretical mean of a exponential distribution is 1/lambda. With lambda set to 0.2 the mean is:
 
-mean = 1 / lamda = 1/0.2 = lamda^-1 = 5
+mean = 1 / lambda = 1/0.2 = lambda^-1 = 5
 
 ```{r}
+lambda = 0.2
 theoretical_mean = lambda^-1
 ```
 
@@ -26,12 +27,18 @@ The sample mean is caculated by running 1000 time the mean of 40 exponential dis
 mns = NULL
 for (i in 1: 1000) mns = c(mns, mean(rexp(40, 0.2)))
 hist(mns)
+x <- seq(0, 10, length=100)
+hx <- dnorm(x, mean=5)
+lines(x, hx*500, col="green", lwd=2)
+abline(v=5, col="red", lwd=2)
 ```
+
+As we can see in the histogram the mean concentrades around the expected theoretical mean of 5.
 
 ## Variance
 The theoretical variance of a exponential distribution is lambda^-2. With lambda set to 0.2 the variance is:
 
-mean = lamda^-2 = 25
+variance = lambda^-2 = 25
 
 ```{r}
 theoretical_variance = lambda^-2
@@ -40,16 +47,10 @@ theoretical_variance = lambda^-2
 The sample variance is caculated by running 1000 time the variance of 40 exponential distribution.
 
 ```{r}
-mns = NULL
-for (i in 1: 1000) mns = c(mns, mean(rexp(40, 0.2)))
-hist(mns)
+vars = NULL
+for (i in 1: 1000) vars = c(vars, var(rexp(40, 0.2)))
+hist(vars)
+abline(v=25, col="red", lwd=2)
 ```
 
-
-You can also embed plots, for example:
-
-```{r, echo=FALSE}
-plot(cars)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+As we can see in the histogram the variance concentrades around the expected theoretical variance of 25.
