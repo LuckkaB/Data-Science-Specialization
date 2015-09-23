@@ -63,7 +63,7 @@ pt(2.5, 15, lower.tail = FALSE)
 ---
 ## Notes
 * By reporting a P-value the reader can perform the hypothesis
-  test at whatever $\alpha$ level he or she choses
+  test at whatever $\alpha$ level he or she chooses
 * If the P-value is less than $\alpha$ you reject the null hypothesis 
 * For two sided hypothesis test, double the smaller of the two one
   sided hypothesis test Pvalues
