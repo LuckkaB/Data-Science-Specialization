@@ -335,7 +335,7 @@ pz <- 2 * pnorm(-abs(z))
 
 
 --- &radio
-The Bonferonni correction controls this
+The Bonferroni correction controls this
 
 1. False discovery rate
 2. _The familywise error rate_
