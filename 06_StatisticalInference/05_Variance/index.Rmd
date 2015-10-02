@@ -73,7 +73,7 @@ ggplot(dat, aes(x = x, y = y, color = factor)) + geom_line(size = 2)
 ## The sample variance 
 - The sample variance is 
 $$
-S^2 = \frac{\sum_{i=1} (X_i - \bar X)^2}{n-1}
+S^2 = \frac{\sum_{i=1}^n (X_i - \bar X)^2}{n-1}
 $$
 (almost, but not quite, the average squared deviation from
 the sample mean)
@@ -126,7 +126,7 @@ g + facet_grid(. ~ size)
 is itself a random variable
 - We know that this distribution is centered around the population
 mean, $E[\bar X] = \mu$
-- We also know what its variance is $Var(\bar X) = \sigma^2 / n$
+- We also know that its variance is $Var(\bar X) = \sigma^2 / n$
 - This is very useful, since we don't have repeat sample means 
 to get its variance; now we know how it relates to
 the population variance
@@ -136,11 +136,11 @@ the population variance
 ## To summarize
 - The sample variance, $S^2$, estimates the population variance, $\sigma^2$
 - The distribution of the sample variance is centered around $\sigma^2$
-- The the variance of sample mean is $\sigma^2 / n$
-  - Its logical estimate is $s^2 / n$
-  - The logical estimate of the standard error is $s / \sqrt{n}$
-- $s$, the standard deviation, talks about how variable the population is
-- $s/\sqrt{n}$, the standard error, talks about how variable averages of random samples of size $n$ from the population are
+- The variance of sample mean is $\sigma^2 / n$
+  - Its logical estimate is $S^2 / n$
+  - The logical estimate of the standard error is $S / \sqrt{n}$
+- $S$, the standard deviation, talks about how variable the population is
+- $S/\sqrt{n}$, the standard error, talks about how variable averages of random samples of size $n$ from the population are
 
 ---
 ## Simulation example
