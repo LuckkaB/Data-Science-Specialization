@@ -173,7 +173,7 @@ Consider the following pmf given in R
 p <- c(.1, .2, .3, .4)
 x <- 2 : 5
 ```
-What is the variance expressed to 1 decimal place? [Watch a solution to this problem.](https://www.youtube.com/watch?v=sn48CGH_TXI&list=PLpl-gQkQivXhHOcVeU3bSJg78zaDYbP9L&index=7)
+What is the variance expressed to 1 decimal place? [Watch a solution to this problem.](https://www.youtube.com/watch?v=HSn8n4DsGSg&list=PLpl-gQkQivXhHOcVeU3bSJg78zaDYbP9L&index=8)
 
 1. _1.0_
 2. 4.0
