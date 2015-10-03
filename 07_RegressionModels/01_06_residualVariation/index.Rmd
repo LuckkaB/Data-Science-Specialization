@@ -14,11 +14,12 @@ widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 
 ---
+
 ```{r setup, cache = FALSE, echo = FALSE, message = FALSE, warning = FALSE, tidy = FALSE}
+library(knitr)
 # make this an external chunk that can be included in any file
 options(width = 100)
 opts_chunk$set(message = F, error = F, warning = F, comment = NA, fig.align = 'center', dpi = 100, tidy = F, cache.path = '.cache/', fig.path = 'fig/')
-
 options(xtable.type = 'html')
 knit_hooks$set(inline = function(x) {
   if(is.numeric(x)) {
@@ -52,7 +53,7 @@ g
 ## Residuals
 * Model $Y_i = \beta_0 + \beta_1 X_i + \epsilon_i$ where $\epsilon_i \sim N(0, \sigma^2)$.
 * Observed outcome $i$ is $Y_i$ at predictor value $X_i$
-* Predicted outcome $i$ is $\hat Y_i$ at predictor valuve $X_i$ is
+* Predicted outcome $i$ is $\hat Y_i$ at predictor value $X_i$ is
   $$
   \hat Y_i = \hat \beta_0 + \hat \beta_1 X_i
   $$
