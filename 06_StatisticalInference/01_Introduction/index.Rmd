@@ -43,7 +43,7 @@ uncertainty in the process to produce a good guess at who will win?
 
 A large clinical trial (the Women’s Health Initiative) published results in 2002 that contradicted prior evidence on the efficacy of hormone replacement therapy for post menopausal women and suggested a negative impact of HRT for several key health outcomes. **Based on a statistically based protocol, the study was stopped early due an excess number of negative events.**
 
-Here's there's two inferential problems. 
+Here's the two inferential problems. 
 
 1. Is HRT effective?
 2. How long should we continue the trial in the presence of contrary
