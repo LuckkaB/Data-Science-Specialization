@@ -43,13 +43,13 @@ uncertainty in the process to produce a good guess at who will win?
 
 A large clinical trial (the Women’s Health Initiative) published results in 2002 that contradicted prior evidence on the efficacy of hormone replacement therapy for post menopausal women and suggested a negative impact of HRT for several key health outcomes. **Based on a statistically based protocol, the study was stopped early due an excess number of negative events.**
 
-Here's there's two inferential problems. 
+Here's the two inferential problems. 
 
 1. Is HRT effective?
 2. How long should we continue the trial in the presence of contrary
 evidence?
 
-See WHI writing group paper JAMA 2002, Vol 288:321 - 333. for the paper and Steinkellner et al. Menopause 2012, Vol 19:616 621 for adiscussion of the long term impacts
+See WHI writing group paper JAMA 2002, Vol 288:321 - 333. for the paper and Steinkellner et al. Menopause 2012, Vol 19:616 621 for a discussion of the long term impacts
 
 ---
 
@@ -149,7 +149,7 @@ on "finite population statistics". Used heavily in polling and
 sample surveys.
 2. Explicit use of randomization in inferences: look in references
 on "causal inference" especially in clinical trials.
-3. Bayesian probability and Bayesian statistics: look for basic itroductory books (there are many).
+3. Bayesian probability and Bayesian statistics: look for basic introductory books (there are many).
 4. Missing data: well covered in biostatistics and econometric
 references; look for references to "multiple imputation", a popular tool for
 addressing missing data.
