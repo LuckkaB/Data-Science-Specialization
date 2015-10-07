@@ -31,7 +31,7 @@ to have a basic understanding for the rest of the series
 Given a random experiment (say rolling a die) a probability measure is a population quantity
 that summarizes the randomness.
 
-Specifically, probability takes a possible outcome from the expertiment and:
+Specifically, probability takes a possible outcome from the experiment and:
 
 - assigns it a number between 0 and 1 
 - so that the probability that something occurs is 1 (the die must be rolled)
