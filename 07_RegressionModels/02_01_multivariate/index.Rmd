@@ -31,7 +31,7 @@ runif(1)
 ```
 ## Multivariable regression analyses
 * If I were to present evidence of a relationship between 
-breath mint useage (mints per day, X) and pulmonary function
+breath mint usage (mints per day, X) and pulmonary function
 (measured in FEV), you would be skeptical.
   * Likely, you would say, 'smokers tend to use more breath mints than non smokers, smoking is related to a loss in pulmonary function. That's probably the culprit.'
   * If asked what would convince you, you would likely say, 'If non-smoking breath mint users had lower lung function than non-smoking non-breath mint users and, similarly, if smoking breath mint users had lower lung function than smoking non-breath mint users, I'd be more inclined to believe you'.
