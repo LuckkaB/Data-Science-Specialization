@@ -124,7 +124,7 @@ where each $X_{i1}$ is binary so that it is a 1 if measurement $i$ is in a group
 * Then for people in the group $E[Y_i] = \beta_0 + \beta_1$
 * And for people not in the group $E[Y_i] = \beta_0$
 * The LS fits work out to be $\hat \beta_0 + \hat \beta_1$ is the mean for those in the group and $\hat \beta_0$ is the mean for those not in the group.
-* $\beta_1$ is interpretted as the increase or decrease in the mean comparing those in the group to those not.
+* $\beta_1$ is interpreted as the increase or decrease in the mean comparing those in the group to those not.
 * Note including a binary variable that is 1 for those not in the group would be redundant. It would create three parameters to describe two means.
 
 ---
