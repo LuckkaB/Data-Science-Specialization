@@ -33,7 +33,7 @@ runif(1)
 * We have an entire class on prediction and machine learning, so we'll focus on modeling.
   * Prediction has a different set of criteria, needs for interpretability and standards for generalizability.
   * In modeling, our interest lies in parsimonious, interpretable representations of the data that enhance our understanding of the phenomena under study.
-  * A model is a lense through which to look at your data. (I attribute this quote to Scott Zeger)
+  * A model is a lens through which to look at your data. (I attribute this quote to Scott Zeger)
   * Under this philosophy, what's the right model? Whatever model connects the data to a true, parsimonious statement about what you're studying.
 * There are nearly uncontable ways that a model can be wrong, in this lecture, we'll focus on variable inclusion and exclusion.
 * Like nearly all aspects of statistics, good modeling decisions are context dependent.
