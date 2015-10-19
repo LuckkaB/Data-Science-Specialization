@@ -35,7 +35,7 @@ runif(1)
   * In modeling, our interest lies in parsimonious, interpretable representations of the data that enhance our understanding of the phenomena under study.
   * A model is a lense through which to look at your data. (I attribute this quote to Scott Zeger)
   * Under this philosophy, what's the right model? Whatever model connects the data to a true, parsimonious statement about what you're studying.
-* There are nearly uncontable ways that a model can be wrong, in this lecture, we'll focus on variable inclusion and exclusion.
+* There are nearly uncountable ways that a model can be wrong, in this lecture, we'll focus on variable inclusion and exclusion.
 * Like nearly all aspects of statistics, good modeling decisions are context dependent.
   * A good model for prediction versus one for studying mechanisms versus one for trying to establish causal effects may not be the same.
 
@@ -55,7 +55,7 @@ In our context
   * This is why we randomize treatments, it attempts to uncorrelate our treatment indicator with variables that we don't have to put in the model. 
   * (If there's too many unobserved confounding variables, even randomization won't help you.)
 * Including variables that we shouldn't have increases standard errors of the regression variables.
-  * Actually, including any new variables increasese (actual, not estimated) standard errors of other regressors. So we don't want to idly throw variables into the model.
+  * Actually, including any new variables increases (actual, not estimated) standard errors of other regressors. So we don't want to idly throw variables into the model.
 * The model must tend toward perfect fit as the number of non-redundant regressors approaches $n$.
 * $R^2$ increases monotonically as more regressors are included.
 * The SSE decreases monotonically as more regressors are included.
@@ -164,7 +164,7 @@ sqrt(vif(fit)) #I prefer sd
 * Principal components or factor analytic models on covariates are often useful for reducing complex covariate spaces.
 * Good design can often eliminate the need for complex model searches at analyses; though often control over the design is limited.
 * If the models of interest are nested and without lots of parameters differentiating them, it's fairly uncontroversial to use nested likelihood ratio tests. (Example to follow.)
-* My favoriate approach is as follows. Given a coefficient that I'm interested in, I like to use covariate adjustment and multiple models to probe that effect to evaluate it for robustness and to see what other covariates knock it out.  This isn't a terribly systematic approach, but it tends to teach you a lot about the the data as you get your hands dirty.
+* My favorite approach is as follows. Given a coefficient that I'm interested in, I like to use covariate adjustment and multiple models to probe that effect to evaluate it for robustness and to see what other covariates knock it out.  This isn't a terribly systematic approach, but it tends to teach you a lot about the the data as you get your hands dirty.
 
 ---
 ## How to do nested model testing in R
