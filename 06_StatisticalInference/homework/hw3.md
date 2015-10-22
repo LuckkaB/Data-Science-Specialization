@@ -50,12 +50,11 @@ attr(,"conf.level")
 [1] 0.95
 ```
 
-
 <span class="answer">18</span>
 <span class="answer">22</span>
 
 --- &multitext
-Suppose that standard deviation of 9 paired differences is $1$. What value would the average difference have to be so that the lower endpoint of a 95%
+Suppose that standard deviation of 9 paired differences is $1$. What value would the average difference have to be so that the lower endpoint of a 97.50%
 students t confidence interval touches zero?
 
 1. Give the number here to two decimal places
