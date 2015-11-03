@@ -1,0 +1,67 @@
+---
+title: "swirl-regression"
+author: "David Parker"
+date: "Wednesday, October 15, 2014"
+output: html_document
+---
+
+```{r}
+install.packages("swirl")
+
+```
+
+##Swirl lessons for Regression  
+
+```{r}
+library(swirl)
+swirl()
+
+```
+
+###Swirl lesson 1, Introduction  
+
+```{r swirl1_introduction}
+library("UsingR")
+plot(child ~ parent, galton)
+# add jitter to distinguish parent/child dots
+plot(jitter(child, 4) ~ parent, galton)
+
+# Add regression line
+regrline <- lm(child ~ parent, galton)
+
+# Add regression line to plot w/abline()
+abline(regrline, lwd = 3, col = "red")
+
+# Examine regression line
+summary(regrline)
+
+```
+
+---  
+
+###swirl lesson 2, Residuals  
+* Using least squares method to solve for slope and intercept.  
+* The distance between the actual children's heights and the estimates given by the regression line.  
+
+```{r swirl2_residuals}
+fit <- lm(child ~ parent, galton)
+# not very meaningful by itself
+head(fit$residuals)
+# consise display of regression data
+summary(fit)
+
+# check to see if mean(fit$residuals) is near 0
+mean(fit$residuals)
+
+# Now check the correlation between the residuals and the predictors is close to 0
+cov(fit$residuals, galton$parent)
+
+# The function est calculates a child's height (y-coordinate) using the line defined by the two parameters, (slope and intercept), and the parents' heights in the Galton data as x-coordinates
+
+# Extract the intercept from fit$coef and put it in a variable called ols.ic
+ols.ic <- fit$coef[1]
+
+# Extract the slope from fit$coef and put it in the variable ols.slope
+ols.slope <- fit$coef[2]
+```
+

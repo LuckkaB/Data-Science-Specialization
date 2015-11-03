@@ -3,5 +3,6 @@
 .cache/
 .Rproj.user
 .RData
+Thumbs.db
 
 *.db
