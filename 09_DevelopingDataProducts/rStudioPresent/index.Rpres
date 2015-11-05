@@ -31,7 +31,7 @@ Authoring content
     - (`alt-f` then `f` then `p` if you want key strokes)
     - Use basically the same R markdown format for authoring as slidify/knitr
         - Single quotes for inline code
-        - Tripple qutoes for block code
+        - Triple quotes for block code
         - Same options for code evaluation, caching, hiding etcetera
 
 Compiling and tools
@@ -40,8 +40,8 @@ Compiling and tools
 - Mathjax JS library is loaded by default so that `$x^2$` yields $x^2$
 - Slide navigation button on the preview; clicking on the notepad icon takes you to that slide in the deck
 - Clicking on `more` yields options for
-    - Clearning the knitr cache
-    - Viewing in a browser (creates a temporay html file in `AppData/local/temp` for me)
+    - Clearing the knitr cache
+    - Viewing in a browser (creates a temporary html file in `AppData/local/temp` for me)
     - Create a html file to save where you want)
 - A refresh button 
 - A zoom button that brings up a full window
@@ -53,14 +53,14 @@ transition: linear
 - R Studio has made it easy to get some cool html5 effects, like cube transitions
 with simple options in YAML-like code after the first slide such as
 `transition: rotate`
-- You can specify it in a slide-by-slide basis
+- You can specify it on a slide-by-slide basis
 
 Here's the option "linear"
 ===
 transition: linear
 
 - Just put `transition: linear` right after the slide creation (three equal signs or more in a row)
-- Tansition options 
+- Transition options 
     - http://www.rstudio.com/ide/docs/presentations/slide_transitions_and_navigation
 
 Hierarchical organization
@@ -108,7 +108,7 @@ Really changing things
 - You can use `css: file.css` to import a css file 
 - You have to create named classes and then use `class: classname` to get slide-specific style control from your css
     - (Or you can apply then within a `<span>`)
-- Ultimately, you have an html file, that you can edit as you wish
+- Ultimately, you have an html file that you can edit as you wish
     - This should be viewed as a last resort, as the whole point is to have reproducible presentations, but may be the easiest way to get the exact style control you want for a final product
 
 Slidify versus R Studio Presenter
