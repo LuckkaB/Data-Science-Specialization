@@ -70,7 +70,7 @@
     dir.create(&quot;data&quot;)
 }
 fileUrl &lt;- &quot;https://data.baltimorecity.gov/api/views/dz54-2aru/rows.csv?accessType=DOWNLOAD&quot;
-download.file(fileUrl, destfile = &quot;cameras.csv&quot;, method = &quot;curl&quot;)
+download.file(fileUrl, destfile = &quot;./data/cameras.csv&quot;, method = &quot;curl&quot;)
 dateDownloaded &lt;- date()
 </code></pre>
 
