@@ -20,7 +20,7 @@ mode        : selfcontained # {standalone, draft}
 
 ## data.table
 
-* Inherets from data.frame
+* Inherits from data.frame
   * All functions that accept data.frame work on data.table
 * Written in C so it is much faster
 * Much, much faster at subsetting, group, and updating
