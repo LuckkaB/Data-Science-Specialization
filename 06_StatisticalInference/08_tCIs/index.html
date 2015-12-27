@@ -320,7 +320,7 @@ t.test(extra ~ I(relevel(group, 2)), paired = TRUE, data = sleep)
   <article data-timings="">
     <pre><code class="r">n1 &lt;- length(g1)
 n2 &lt;- length(g2)
-sp &lt;- sqrt(((n1 - 1) * sd(x1)^2 + (n2 - 1) * sd(x2)^2)/(n1 + n2 - 2))
+sp &lt;- sqrt(((n1 - 1) * sd(g1)^2 + (n2 - 1) * sd(g2)^2)/(n1 + n2 - 2))
 </code></pre>
 
 <pre><code>## Error: object &#39;x1&#39; not found
