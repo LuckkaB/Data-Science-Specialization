@@ -173,7 +173,7 @@ g
 ## Permutation tests
 -  Consider the null hypothesis that the distribution of the observations from each group is the same
 -  Then, the group labels are irrelevant
-- Consider a data frome with count and spray
+- Consider a data frame with count and spray
 - Permute the spray (group) labels 
 - Recalculate the statistic
   - Mean difference in counts
