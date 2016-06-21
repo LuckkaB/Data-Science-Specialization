@@ -361,7 +361,8 @@ QuizTextHandler.prototype = {
       $(".quiz-answerbox", self.question).each(function(){
         var userAnswer = parseFloat($(this).val());
         self.answer = $(this).data("answer");
-        if (Math.abs(userAnswer - self.answer)/self.answer < 0.02){
+        // note: the answer may be 0. For example: 06_StatisticalInference/homework/hw4.html#6
+        if (userAnswer == self.answer || Math.abs(userAnswer - self.answer)/self.answer < 0.02){
           self.explanationVisible(true);
           $(this).addClass('quiz-correct')
         } else {
