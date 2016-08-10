@@ -2,7 +2,7 @@
 title: "Two group intervals"
 author: "Brian Caffo, Jeff Leek, Roger Peng"
 highlighter: highlight.js
-output: word_document
+output: html_document
 job: Johns Hopkins Bloomberg School of Public Health
 logo: bloomberg_shield.png
 mode: selfcontained

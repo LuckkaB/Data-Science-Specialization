@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{Hypothesis testing}{3}{0}{1}
+\beamer@sectionintoc {2}{General rules}{9}{0}{2}
+\beamer@sectionintoc {3}{Notes}{12}{0}{3}
+\beamer@sectionintoc {4}{Two sided tests}{14}{0}{4}
+\beamer@sectionintoc {5}{Confidence intervals}{15}{0}{5}
+\beamer@sectionintoc {6}{P-values}{17}{0}{6}

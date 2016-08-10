@@ -2,7 +2,7 @@
 title: "Probability"
 author: "Brian Caffo, Jeff Leek, Roger Peng"
 highlighter: highlight.js
-output: html_document
+output: pdf_document
 job: Johns Hopkins Bloomberg School of Public Health
 logo: bloomberg_shield.png
 mode: selfcontained

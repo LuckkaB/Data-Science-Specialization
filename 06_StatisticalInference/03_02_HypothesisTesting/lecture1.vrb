@@ -1,0 +1,8 @@
+\frametitle{Example}
+In our example the $T$ statistic was $0.8$. What's the probability of getting
+a $T$ statistic as large as $0.8$?
+\begin{verbatim}
+pt(0.8, 15, lower.tail = FALSE) ##works out to be 0.22
+\end{verbatim}
+Therefore, the probability of seeing evidence as extreme or more
+extreme than that actually obtained is $0.22$

@@ -1,3 +1,6 @@
+---
+output: pdf_document
+---
 <<<<<<< HEAD:06_StatisticalInference/01_02_Probability/index.Rmd
 ---
 title       : Probability

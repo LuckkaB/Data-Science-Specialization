@@ -1,17 +1,18 @@
 ---
-title       : Introduction to regression
-subtitle    : Regression
-author      : Brian Caffo, Jeff Leek and Roger Peng
-job         : Johns Hopkins Bloomberg School of Public Health
-logo        : bloomberg_shield.png
-framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
-highlighter : highlight.js  # {highlight.js, prettify, highlight}
-hitheme     : tomorrow      # 
+title: "Introduction to regression"
+author: "Brian Caffo, Jeff Leek and Roger Peng"
+highlighter: highlight.js
+output: html_document
+job: Johns Hopkins Bloomberg School of Public Health
+logo: bloomberg_shield.png
+mode: selfcontained
+hitheme: tomorrow
+subtitle: Regression
+framework: io2012
 url:
-  lib: ../../librariesNew
   assets: ../../assets
-widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
-mode        : selfcontained # {standalone, draft}
+  lib: ../../librariesNew
+widgets: mathjax
 ---
 ```{r setup, cache = F, echo = F, message = F, warning = F, tidy = F, results='hide'}
 # make this an external chunk that can be included in any file
@@ -187,8 +188,7 @@ and children's heights
 
 ---
 ```{r, echo = TRUE, eval = FALSE}
-y <- galton$child - mean(galton$child)
-x <- galton$parent - mean(galton$parent)
+beta1 <-
 freqData <- as.data.frame(table(x, y))
 names(freqData) <- c("child", "parent", "freq")
 freqData$child <- as.numeric(as.character(freqData$child))
