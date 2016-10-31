@@ -175,6 +175,7 @@ and children's heights
 ---
 
 ```r
+library(dplyr)
 y <- galton$child - mean(galton$child)
 x <- galton$parent - mean(galton$parent)
 freqData <- as.data.frame(table(x, y))
