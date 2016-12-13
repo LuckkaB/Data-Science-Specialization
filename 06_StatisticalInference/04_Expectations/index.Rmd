@@ -214,7 +214,7 @@ g + facet_grid(. ~ size)
 ```
 
 ---
-## Sumarizing what we know
+## Summarizing what we know
 - Expected values are properties of distributions
 - The population mean is the center of mass of population
 - The sample mean is the center of mass of the observed data
