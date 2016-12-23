@@ -1,4 +1,20 @@
 ---
+<<<<<<< HEAD:06_StatisticalInference/01_05_ConditionalProbability/index.Rmd
+title: "Conditional Probability"
+author: "Brian Caffo, Jeff Leek, Roger Peng"
+highlighter: highlight.js
+output: html_document
+job: Johns Hopkins Bloomberg School of Public Health
+logo: bloomberg_shield.png
+mode: selfcontained
+hitheme: tomorrow
+subtitle: Statistical Inference
+framework: io2012
+url:
+  assets: ../../assets
+  lib: ../../librariesNew
+widgets: mathjax
+=======
 title       : Conditional Probability
 subtitle    : Statistical Inference
 author      : Brian Caffo, Jeff Leek, Roger Peng
@@ -12,6 +28,7 @@ url:
   assets: ../../assets
 widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
+>>>>>>> bcaffo/master:06_StatisticalInference/old_markdown/01_05_ConditionalProbability/index.md
 ---
 
 ## Conditional probability, motivation

@@ -1,17 +1,18 @@
 ---
-title       : Two group intervals
-subtitle    : Statistical Inference
-author      : Brian Caffo, Jeff Leek, Roger Peng
-job         : Johns Hopkins Bloomberg School of Public Health
-logo        : bloomberg_shield.png
-framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
-highlighter : highlight.js  # {highlight.js, prettify, highlight}
-hitheme     : tomorrow      # 
+title: "Two group intervals"
+author: "Brian Caffo, Jeff Leek, Roger Peng"
+highlighter: highlight.js
+output: html_document
+job: Johns Hopkins Bloomberg School of Public Health
+logo: bloomberg_shield.png
+mode: selfcontained
+hitheme: tomorrow
+subtitle: Statistical Inference
+framework: io2012
 url:
-  lib: ../../librariesNew
   assets: ../../assets
-widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
-mode        : selfcontained # {standalone, draft}
+  lib: ../../librariesNew
+widgets: mathjax
 ---
 
 ## Independent group $t$ confidence intervals
@@ -142,7 +143,6 @@ $$
     {\left(\frac{S_x^2}{n_x}\right)^2 / (n_x - 1) +
       \left(\frac{S_y^2}{n_y}\right)^2 / (n_y - 1)}
 $$
-
 ---
 
 ## Example
