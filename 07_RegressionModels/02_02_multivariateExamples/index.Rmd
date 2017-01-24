@@ -48,7 +48,7 @@ All variables but Fertility give proportions of the population.
 
 ```{r, fig.height=6, fig.width=10, echo = FALSE}
 require(datasets); data(swiss); require(GGally); require(ggplot2)
-g = ggpairs(swiss, lower = list(continuous = "smooth"),params = c(method = "loess"))
+g = wrap(ggpairs(swiss, lower = list(continuous = "smooth")), params = c(method = "loess"))
 g
 ```
 
