@@ -76,7 +76,7 @@ Thus the likelihood is
 $$
 \prod_{i=1}^n \mu_i^{y_i} (1 - \mu_i)^{1-y_i}
 = \exp\left(\sum_{i=1}^n y_i \eta_i \right)
-\prod_{i=1}^n (1 + \eta_i)^{-1}
+\prod_{i=1}^n (1 + \exp(\eta_i))^{-1}
 $$
 
 ---
