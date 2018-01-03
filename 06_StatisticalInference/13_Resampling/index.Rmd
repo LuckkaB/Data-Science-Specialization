@@ -76,7 +76,7 @@ resampledMedians <- apply(resamples, 1, median)
 ```
 
 ---
-## A plot of the histrogram of the resamples
+## A plot of the histogram of the resamples
 ```{r, fig.align='center', fig.height=6, fig.width=6, echo=FALSE, warning=FALSE}
 g = ggplot(data.frame(x = resampledMedians), aes(x = x)) 
 g = g + geom_density(size = 2, fill = "red")
