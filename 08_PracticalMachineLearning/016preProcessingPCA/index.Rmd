@@ -18,6 +18,7 @@ mode        : selfcontained # {standalone, draft}
 ```{r setup, cache = F, echo = F, message = F, warning = F, tidy = F}
 # make this an external chunk that can be included in any file
 options(width = 100)
+library(knitr)
 opts_chunk$set(message = F, error = F, warning = F, comment = NA, fig.align = 'center', dpi = 100, tidy = F, cache.path = '.cache/', fig.path = 'fig/')
 
 options(xtable.type = 'html')
@@ -158,7 +159,7 @@ plot(spamPC[,1],spamPC[,2],col=typeColor)
 ```{r pcaCaret,dependson="spamPC",cache=TRUE,fig.height=3.5,fig.width=3.5}
 preProc <- preProcess(log10(training[,-58]+1),method="pca",pcaComp=2)
 trainPC <- predict(preProc,log10(training[,-58]+1))
-modelFit <- train(training$type ~ .,method="glm",data=trainPC)
+modelFit <- train(y=training$type,method="glm",x=trainPC)
 ```
 
 ---
