@@ -11,4 +11,4 @@
 * Write down the procedure carried out so far
 ##### For problem 3
 * Issue a pull request for the course repository
-![Pull request for the Course repository](https://github.com/Billllllly/courses/blob/master/Test/Screen%20Shot%202019-02-02%20at%205.01.08%20PM.png)
+![Pull request for the Course repository](https://github.com/Billllllly/courses/blob/master/Test/Screen%20Shot%202019-02-02%20at%205.20.04%20PM.png)
