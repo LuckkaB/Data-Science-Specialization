@@ -1,8 +1,7 @@
 ##### For problem 1
 * Navigated to the Wiki page of Alexander the great and copy the URL.
 
-![Alexander the great web page]
-(https://github.com/Billllllly/courses/blob/master/Test/Screen%20Shot%202019-02-02%20at%204.47.02%20PM.png)
+![Alexander the great web page](https://github.com/Billllllly/courses/blob/master/Test/Screen%20Shot%202019-02-02%20at%204.47.02%20PM.png)
 
 * Open `Terminal` on mac, created and navigated to my desired homework folder.
 * Download the content from the Alexander the great Wiki page to my folder using `Wget`
