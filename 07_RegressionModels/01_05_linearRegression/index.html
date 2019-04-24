@@ -57,7 +57,6 @@ Y_i = \beta_0 + \beta_1 X_i + \epsilon_{i}
 <li>Here the \(\epsilon_{i}\) are assumed iid \(N(0, \sigma^2)\). </li>
 <li>Note, \(E[Y_i ~|~ X_i = x_i] = \mu_i = \beta_0 + \beta_1 x_i\)</li>
 <li>Note, \(Var(Y_i ~|~ X_i = x_i) = \sigma^2\).</li>
-<li>Likelihood equivalent model specification is that the \(Y_i\) are independent \(N(\mu_i, \sigma^2)\).</li>
 </ul>
 
   </article>
@@ -148,16 +147,6 @@ value of the predictor, say \(X\), the regression model guesses
 \[
 \hat \beta_0 + \hat \beta_1 X
 \]</li>
-<li>Note that at the observed value of $X$s, we obtain the
-predictions
-\[
-\hat \mu_i = \hat Y_i = \hat \beta_0 + \hat \beta_1 X_i
-\]</li>
-<li>Remember that least squares minimizes 
-\[
-\sum_{i=1}^n (Y_i - \mu_i)
-\]
-for \(\mu_i\) expressed as points on a line</li>
 </ul>
 
   </article>
@@ -174,27 +163,13 @@ for \(\mu_i\) expressed as points on a line</li>
 <p>Data is diamond prices (Singapore dollars) and diamond weight
 in carats (standard measure of diamond mass, 0.2 \(g\)). To get the data use <code>library(UsingR); data(diamond)</code></p>
 
-<p>Plotting the fitted regression line and data</p>
-
-<pre><code>data(diamond)
-library(ggplot2)
-g = ggplot(diamond, aes(x = carat, y = price),
-)
-g = g + xlab(&quot;Mass (carats)&quot;)
-g = g + ylab(&quot;Pice (SIN $)&quot;)
-g = g + geom_point(size = 6, colour = &quot;black&quot;, alpha=0.2)
-g = g + geom_point(size = 5, colour = &quot;blue&quot;, alpha=0.2)
-g = g + geom_smooth(method = &quot;lm&quot;, colour = &quot;black&quot;)
-g
-</code></pre>
-
   </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="" id="slide-7" style="background:;">
   <hgroup>
-    <h2>The plot</h2>
+    <h2>Plot of the data</h2>
   </hgroup>
   <article data-timings="">
     <div class="rimage center"><img src="fig/unnamed-chunk-1.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" class="plot" /></div>
@@ -350,7 +325,7 @@ and at the new Xs (lines)</p>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=7 title='The plot'>
+        data-slide=7 title='Plot of the data'>
          7
       </a>
     </li>

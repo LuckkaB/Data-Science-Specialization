@@ -15,6 +15,7 @@ mode        : selfcontained # {standalone, draft}
 
 ---
 
+
 ## Basic regression model with additive Gaussian errors.
 * Least squares is an estimation tool, how do we do inference?
 * Consider developing a probabilistic model for linear regression
@@ -24,7 +25,6 @@ $$
 * Here the $\epsilon_{i}$ are assumed iid $N(0, \sigma^2)$. 
 * Note, $E[Y_i ~|~ X_i = x_i] = \mu_i = \beta_0 + \beta_1 x_i$
 * Note, $Var(Y_i ~|~ X_i = x_i) = \sigma^2$.
-* Likelihood equivalent model specification is that the $Y_i$ are independent $N(\mu_i, \sigma^2)$.
 
 
 ---
@@ -80,16 +80,7 @@ $$
   $$
   \hat \beta_0 + \hat \beta_1 X
   $$
-* Note that at the observed value of $X$s, we obtain the
-  predictions
-  $$
-  \hat \mu_i = \hat Y_i = \hat \beta_0 + \hat \beta_1 X_i
-  $$
-* Remember that least squares minimizes 
-$$
-\sum_{i=1}^n (Y_i - \mu_i)
-$$
-for $\mu_i$ expressed as points on a line
+
 
 ---
 ## Example
@@ -97,23 +88,11 @@ for $\mu_i$ expressed as points on a line
 Data is diamond prices (Singapore dollars) and diamond weight
 in carats (standard measure of diamond mass, 0.2 $g$). To get the data use `library(UsingR); data(diamond)`
 
-Plotting the fitted regression line and data
-```
-data(diamond)
-library(ggplot2)
-g = ggplot(diamond, aes(x = carat, y = price),
-)
-g = g + xlab("Mass (carats)")
-g = g + ylab("Pice (SIN $)")
-g = g + geom_point(size = 6, colour = "black", alpha=0.2)
-g = g + geom_point(size = 5, colour = "blue", alpha=0.2)
-g = g + geom_smooth(method = "lm", colour = "black")
-g
-```
 
 ---
-## The plot
+## Plot of the data
 <div class="rimage center"><img src="fig/unnamed-chunk-1.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" class="plot" /></div>
+
 
 ---
 ## Fitting the linear regression model
@@ -127,6 +106,7 @@ coef(fit)
 (Intercept)       carat 
      -259.6      3721.0 
 ```
+
 
 * We estimate an expected 3721.02 (SIN) dollar increase in price for every carat increase in mass of diamond.
 * The intercept -259.63 is the expected price
@@ -144,6 +124,7 @@ coef(fit2)
            (Intercept) I(carat - mean(carat)) 
                  500.1                 3721.0 
 ```
+
 
 Thus $500.1 is the expected price for 
 the average sized diamond of the data (0.2042 carats).
@@ -166,6 +147,7 @@ coef(fit3)
        -259.6         372.1 
 ```
 
+
 ---
 ## Predicting the price of a diamond
 
@@ -187,8 +169,10 @@ predict(fit, newdata = data.frame(carat = newx))
  335.7  745.1 1005.5 
 ```
 
+
 ---
 Predicted values at the observed Xs (red)
 and at the new Xs (lines)
 <div class="rimage center"><img src="fig/unnamed-chunk-6.png" title="plot of chunk unnamed-chunk-6" alt="plot of chunk unnamed-chunk-6" class="plot" /></div>
+
 

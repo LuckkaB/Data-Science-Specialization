@@ -1,7 +1,7 @@
 ---
 title       : Historical side note, Regression to Mediocrity
-subtitle    : Regression to the mean
-author      : Brian Caffo, Jeff Leek, Roger Peng PhD
+subtitle    : Regression
+author      : Brian Caffo, Jeff Leek and Roger Peng
 job         : Johns Hopkins Bloomberg School of Public Health
 logo        : bloomberg_shield.png
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
@@ -42,8 +42,13 @@ mode        : selfcontained # {standalone, draft}
 * Notice if $X$ is the outcome and you create a plot where $X$ is the horizontal axis, the slope of the least squares line that you plot is $1/Cor(Y, X)$. 
 
 ---
+<<<<<<< HEAD
+<div class="rimage center"><img src="fig/unnamed-chunk-1.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" class="plot" /></div>
+
+=======
 ## Plot of the results
 <div class="rimage center"><img src="fig/unnamed-chunk-1.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" class="plot" /></div>
+>>>>>>> 3e5b14bbb8f101fc2a8573beb037d5f1b6f6fe47
 
 ---
 ## Discussion
