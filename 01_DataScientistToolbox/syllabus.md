@@ -178,3 +178,5 @@ The Coursera web site seems to work best with either the Chrome or the Firefox w
 _Mac_
 
 The Coursera site appears to work well with Safari, Chrome, or Firefox, so any of these browsers should be fine.
+
+This is a test for assignment1 question3.
