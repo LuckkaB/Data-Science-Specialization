@@ -151,7 +151,7 @@ You don't believe that your friend can discern good wine from cheap. Assuming
 that you're right, in a blind test where you randomize 6 paired varieties (Merlot,
 Chianti, ...) of cheap and expensive wines
 
-1. what is the change that she gets 5 or 6 right expressed as a percentage
+1. what is the chance that she gets 5 or 6 right expressed as a percentage
 to one decimal place?
 
 *** .hint
@@ -167,7 +167,7 @@ round(pbinom(4, prob = .5, size = 6, lower.tail = TRUE) * 100, 1)
 
 --- &multitext
 
-Consider a uniform distribution. If we were to sample 100 draws from a 
+Consider a uniform distribution. If we were to sample 100 draws from 
 a uniform distribution (which has mean 0.5, and variance 1/12) and take their
 mean, $\bar X$
 
