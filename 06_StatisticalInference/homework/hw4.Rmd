@@ -171,7 +171,7 @@ setting.
 
 --- &multitext
 
-Suppose that in an AB test, one advertising scheme led to an average of 10 purchases per day for a sample of 100 days, while the other led to 11 purchaces per day, also for a sample of 100 days.
+Suppose that in an AB test, one advertising scheme led to an average of 10 purchases per day for a sample of 100 days, while the other led to 11 purchases per day, also for a sample of 100 days.
 Assuming a common standard deviation of 4 purchases per day.
 Assuming that the groups are independent and that they days are iid, perform a Z test of
 equivalence. 
